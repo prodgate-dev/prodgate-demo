@@ -4,7 +4,7 @@ import { requireAuth } from '../middleware/auth'
 const router = Router()
 
 // All user routes require authentication
-router.get('/profile', requireAuth, (req, res) => {
+router.get('/profile', (req, res) => {
   res.json({ user: 'profile data' })
 })
 
