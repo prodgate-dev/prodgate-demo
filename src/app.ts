@@ -15,6 +15,6 @@ app.use('/auth', authRouter)
 app.use('/users', usersRouter)
 
 // Admin routes: require auth AND admin role at router level
-app.use('/admin', requireAuth, requireAdmin, adminRouter)
+app.use('/admin', adminRouter)
 
 export default app
